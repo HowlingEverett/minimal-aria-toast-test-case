@@ -1,0 +1,14 @@
+<div class="app-test-page">
+  <h1>Aria Toast Test Page</h1>
+  <p>This is a minimal test of ngx-toastr and aria-live</p>
+  <p>
+    When you click the button below, you should see an informational toast
+    appear, with a small amount of content. If the code is functioning
+    correctly, you should also hear this text read out (politely, meaning "after
+    existing voicover content completes") in Voiceover in Chrome.
+  </p>
+
+  <button (click)="displayToast()" )>Show Test Toast</button>
+</div>
+
+<div aria-live="polite" aria-atomic="true" toastContainer></div>
